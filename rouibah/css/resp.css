@@ -1,0 +1,234 @@
+@media screen and (max-width: 1080px)
+{
+
+body {
+
+	margin:0px;
+	padding:0px;
+	background-color: #E3E2D6;
+	font-size: 2em;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.modal {
+
+	display: none;
+}
+
+.div-header{
+
+	display: none;
+}
+
+.div-header-resp {
+
+	display:block;
+	width: 100%;
+	height: 170px;
+	background-color: #F79521;
+}
+
+.header-link-resp {
+
+	width: 100%;
+	height: 150px;
+	background-color: #0B7679;
+
+}
+
+.drop {
+
+	position: absolute;
+	top:10px;
+	right:10px;
+	width: 100%;
+}
+
+.drop-down {
+
+	display: none;
+	position: absolute;
+	top:170px;
+	left:0px;
+	width: 100%;
+	border: 1px solid #0B7679;
+	background-color: #0B7679;
+}
+
+.div-link {
+
+	padding: 20px;
+	font-size: 1.5em;
+}
+
+.link-resp {
+
+	
+	color:white;
+}
+
+.link-resp:hover {
+
+	width: 100%;
+
+	color:black;
+	background-color: #F79521;
+}
+
+ .div-link:hover{
+
+	color:black;
+	background-color: #F79521;
+}
+
+
+.bars {
+
+	position: absolute;
+	top:5px;
+	right:10px;
+	color: #F79521
+}
+
+.div-photo-resp {
+
+	position: absolute;
+	top:85px;
+	text-align: center;
+
+}
+
+.photo-resp {
+
+	position: absolute;
+	width: 100px;
+	border:20px solid #F79521;
+	border-radius: 50%;
+}
+
+.div-section {
+
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+}
+
+
+
+
+
+.div-section-left {
+
+	width: 100%;
+	height:100%;
+}
+
+.div-section-right {
+
+	width: 100%;
+	height:100%;
+
+}
+
+.div-white {
+
+	height:30px;
+}
+
+.p-pos-green {
+
+	position:relative; top:-50px; text-align:right; right:-20px;color: #0B7679;
+}
+
+.p-pos-orange {
+
+	position:relative; top:-50px; text-align:right; right:-20px;color: #F79521;
+}
+
+.div-footer {
+
+	display: none;
+}
+
+.div-footer-resp {
+
+	display: block;
+	width: 100%;
+	height:170px;
+	background-color: #F79521;
+}
+
+.footer-link-resp {
+	position: relative;
+	top:20px;
+	width: 100%;
+	height: 150px;
+	background-color: #0B7679;
+
+}
+
+.shared {
+
+	display: none;
+}
+
+.input {
+
+	width: 100%;
+	height:80px;
+	margin-top: 20px;
+	font-size: 1.2em;
+}
+
+.area {
+
+	width: 100%;
+	height: 300px;
+	margin-top: 20px;
+	font-size: 1.2em;
+}
+
+.div-section-contact {
+
+	display: flex;
+	flex-direction: column;
+	padding-left: 10%;
+}
+
+.content-contact {
+
+	width: 80%;
+}
+
+
+.content-input {
+
+	width: 80%;
+}
+
+.button {
+
+
+	width: 30%;
+	height: 80px;
+	font-size: 1.2em;
+}
+
+.button:hover {
+
+
+	width: 30%;
+	height: 80px;
+	font-size: 1.2em;
+	background-color: #F79521;
+}
+
+.div-compteur {
+
+	position: relative;
+	left:20px;
+
+}
+
+
+}
