@@ -2,7 +2,7 @@
 
 <?php
 
-class Router {
+class Rooter {
 
 	private $_loaderModel;
 
