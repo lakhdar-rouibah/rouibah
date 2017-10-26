@@ -95,19 +95,47 @@
 	left:5%;
 	width:90%;
 }
-
+/*===================================== div second =======================================*/
 .second {
 
 	position: absolute;
 	top:2200px;
+	text-align: center;
 
 }
 
+.second-content {
 
+	position: relative;
+	top: 50px;
+	display: flex;
+	flex-direction: column;
+	margin:0px;
+	text-align: center;
+	
+}
 
+.sc {
 
+	text-align: center;
 
+	margin-right: auto;
+	margin-left: auto;
+}
 
+.small-diapo {
+
+	display: flex;
+	flex-direction: column;
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+
+.img-s-d {
+
+	height:197px;
+}
 
 
 
