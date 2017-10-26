@@ -1,0 +1,16 @@
+@font-face {
+    font-family: gotham_medium;
+    src: url(Gotham_Rounded_Medium.otf);
+}
+
+
+body {
+
+	margin: 0px ;
+	padding: 0px ;
+	background-color: white ;
+	color : black;
+	font-family: gotham_medium;
+}
+
+

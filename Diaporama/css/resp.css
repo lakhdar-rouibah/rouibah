@@ -1,0 +1,47 @@
+@media screen and (max-width: 800px){
+    
+.div-link {
+
+	display:none;
+}
+
+.div-link-resp {
+
+	display: block;
+	text-align: right;
+	background-color: #13245a;
+}
+
+.bars {
+
+	margin-top:5px;
+	margin-right:25px;
+	color:white;
+}
+
+.drop-down {
+
+	display:none;
+	flex-direction: column;
+
+}
+
+.links {
+
+	text-decoration: none;
+	text-transform: uppercase;
+	color:white;
+	padding-right: 25px;
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+
+.links:hover {
+
+	padding-top:10px;
+	padding-bottom: 10px;
+	background-color: #3d508a;
+}
+
+
+}
