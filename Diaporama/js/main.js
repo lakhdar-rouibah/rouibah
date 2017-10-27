@@ -11,11 +11,11 @@ var haut = window.innerHeight;
 
 
 var divBorder = document.getElementById("divBorder");
-	divBorder.style.width = "80%";
 var hDivBorder = divBorder.offsetHeight;
 var wDivBorder = divBorder.offsetWidth;
 var middle = (larg/2)-(wDivBorder/2);
-	divBorder.style.left = middle+"px";
+	divBorder.style.left = 10+"%";
+	
 	
 
 console.log("largeur div : "+wDivBorder+" larg ecran : "+larg);

@@ -59,6 +59,7 @@
 
 	position: relative;
 	top:90px;
+	width: 80%;
 	border:solid 4px white;
 	border-radius: 16px;
 	box-shadow: 10px 10px 20px rgba(0,0,0,.8);
