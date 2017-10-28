@@ -1,14 +1,114 @@
-@font-face {
-    font-family: gotham_bold;
-    src: url(Gotham_Rounded_Bold.otf);
-}
-/*===================================== header =================================*/
-.header-div {
 
+
+.div-header {
+
+	position:relative;
 	width:100%;
-	height: 770px;
+	height:785px;
 	background-image: url('../img/img_div.jpg');
 }
+
+.div-section {
+
+	position:relative;
+	width:100%;
+	height:2330px;
+	overflow: hidden;
+	background-color: white;
+
+}
+
+.div-footer {
+
+	position:relative;
+	width:100%;
+	height:535px;
+	background-color: white;
+}
+
+.first {
+
+	position:relative;
+	width: 100%;
+	height:500px;
+	background-color: #f5f6f7;
+}
+
+.second {
+
+	position:relative;
+	width: 100%;
+	height:550px;
+	background-color: white;
+}
+
+.third {
+
+	position:relative;
+	width: 100%;
+	height:490px;
+	background-color: #f5f6f7;
+}
+
+.foorth {
+
+	position:relative;
+	width: 100%;
+	height:790px;
+	background-image: url('../img/hdr.jpg');
+	background-repeat:no-repeat;
+}
+
+.footer-first {
+
+	position: relative;
+	width: 100%;
+	height:400px;
+	background-color: #f5f6f7;
+}
+
+.footer-content {
+
+	position: absolute;
+	
+	left:30%;
+	top:50px;
+	width:40%;
+	text-align: center;
+	
+}
+
+.footer-btn {
+
+	display: flex;
+	justify-content: space-around;
+}
+
+
+
+.footer-second {
+
+	position: relative;
+	width: 100%;
+	height:135px;
+	background-color: white;
+}
+
+.left-footer {
+
+	position: absolute;
+	left: 128px;
+	top:30px;
+
+}
+
+.right-footer {
+
+	position: absolute;
+	right: 128px;
+	top:30px;
+}
+/*===========================================================================================================*/
 
 .img-div {
 
@@ -148,21 +248,15 @@
 
 	display: none;
 }
-/*======================================== fin header ==========================================*/
 
-/*========================================== section ==========================================*/
+/*======================================================================================================*/
 
-.div-section {
 
-	
-	width:100%;
-	height:100%;
-}
 
 .handPhone-text {
 
 	position: absolute;
-	top:840px;
+	top:100px;
 	left: 128px;
 	width:425px;
 
@@ -185,26 +279,17 @@
 .handPhone {
 
 	position: absolute;
-	top:840px;
+	top:130px;
 	right: 128px;
-	
 }
 
-.first {
 
-	position:absolute;
-	top:1233px;
-	height:560px;
-	width:100%;
-	background-color: white;
-}
 
 .first-phone {
 
 	position:absolute;
 	top:140px;
 	left:128px;
-	background-color: white;
 }
 
 .first-text {
@@ -212,18 +297,9 @@
 	position:absolute;
 	top:120px;
 	right:128px;
-	background-color: white;
 }
 
-.second {
 
-	position:absolute;
-	top:1700px;
-	width:100%;
-	height:485px;
-	background-color: #f5f6f7;
-
-}
 
 
 .second-content {
@@ -262,16 +338,6 @@
 .img-s-d {
 
 	height:100%;
-}
-
-.third {
-
-	position:absolute;
-	top:2200px;
-	width: 100%;
-	height:100%;
-	background-image: url('../img/hdr.jpg');
-	background-repeat:no-repeat;
 }
 
 .div-third {
@@ -328,16 +394,3 @@
 	color:white;
 	font-size: 1.5em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
