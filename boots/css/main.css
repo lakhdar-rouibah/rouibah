@@ -1,0 +1,41 @@
+
+
+
+.plan {
+
+
+	position: absolute;
+	width: 60%;
+	height:65%;
+	
+}
+
+
+.name {
+
+	position: absolute;
+	font-size: 130%;
+	font-weight: bold;
+
+}
+
+.informations {
+
+	position: absolute;
+	color:white;
+	font-size: 90%;
+	text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
