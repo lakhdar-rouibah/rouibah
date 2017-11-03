@@ -6,6 +6,7 @@ var larg = window.innerWidth;
 var haut = window.innerHeight;
 
 var plan = document.getElementById('plan');
+var div2 = document.getElementById('div2');
 
 var links1 = document.getElementById('links1');
 var links2 = document.getElementById('links2');
@@ -21,9 +22,13 @@ var hPlan = plan.offsetHeight;
 var hMiddle = (haut/2)-(hPlan/2);
 var wMiddle = (larg/2)-(wPlan/2);
 
-i=0;
+var hDiv2 = div2.offsetHeight;
 
-function links_rotate(){
+	div2.style.top = -hDiv2+"px";
+
+i=0;
+m = -300;
+function links_rotate(id){
 
 	i+=5;
 
@@ -45,10 +50,30 @@ function links_rotate(){
 	}
 }
 
+function inter_links(){
+
+			id = setInterval(function(){ links_rotate(id); }, 1);
+
+}
+
+function div(iddiv){
+
+	m+=1;
+
+	div2.style.top = m+"px";
+	div2.style.left = m+"px";
+
+	if (m == -60){
+
+		clearInterval(iddiv);
+		inter_links();
+		
+	}
+
+}
 
 
-
-	id = setInterval(function(){ links_rotate(); }, 1);
+	iddiv = setInterval(function(){ div(iddiv); }, 1);
 
 //========================================================= wind =======================================
 
@@ -75,13 +100,14 @@ var wind4 = document.getElementById('wind4');
 
 var s = -(wind1.offsetHeight);
 var l = 100;
+var n = 0;
 
 var loadwind = function () {
 
     
     this.open= function (win, id) {
 
-	    s += 5;
+	    s += 1;
 		win.style.top = s+"px";
 
 		if (s >= 0){
@@ -94,7 +120,7 @@ var loadwind = function () {
 
 	this.close= function (win, id) {
 
-    	s -= 5;
+    	s -= 1;
 		win.style.top = s+"px";
 
 		if (s <= -(win.offsetHeight)){
@@ -110,21 +136,21 @@ var loadwind = function () {
 var wind = function () {
 
     
-    this.open= function (win,win1,win2, id) {
+    this.open= function (win,win1,win2,win3, id) {
 
 	    s += 5;
 	    l-=1;
 		win.style.top = s+"px";
 		win1.style.opacity = l/10;
 		win2.style.opacity = l/10;
-
-		console.log(l/10);
+		win3.style.opacity = l/10;
 
 		if (l==0){
 
 			l=0;
 			win1.style.display = "none";
 			win2.style.display = "none";
+			win3.style.display = "none";
 		}
 
 		if (s >= 0){
@@ -135,21 +161,21 @@ var wind = function () {
         
     }
 
-	this.close= function (win,win1,win2, id) {
+	this.close= function (win,win1,win2,win3, id) {
 
     	s -= 5;
     	l +=1;
 		win.style.top = s+"px";
 		win1.style.opacity = l/10;
 		win2.style.opacity = l/10;
-
-		console.log(l/10);
+		win3.style.opacity = l/10;
 
 		if (l==10){
 
 			l=10;
 			win1.style.display = "block";
 			win2.style.display = "block";
+			win3.style.display = "block";
 		}
 
 		if (s <= -(win.offsetHeight)){
@@ -162,14 +188,14 @@ var wind = function () {
 }
 
 //============================================= link3
-link3.addEventListener("click", function(){
+link4.addEventListener("click", function(){
 
-	if (wind3.offsetTop == -(wind3.offsetHeight)){
+	if (wind4.offsetTop == -(wind4.offsetHeight)){
 
 		id4 = setInterval(function(){ 
 
 			windo1 = new wind();
-			windo1.open(wind3,links2,links1, id4)
+			windo1.open(wind4,links2,links1,links3, id4)
 
 		 }, 1);
 	}else {
@@ -178,7 +204,31 @@ link3.addEventListener("click", function(){
 		id5 = setInterval(function(){ 
 
 			windo1 = new wind();
-			windo1.close(wind3,links2,links1, id5)
+			windo1.close(wind4,links2,links1,links3, id5)
+
+		}, 1);
+	}
+
+});
+
+
+link3.addEventListener("click", function(){
+
+	if (wind3.offsetTop == -(wind3.offsetHeight)){
+
+		id4 = setInterval(function(){ 
+
+			windo1 = new wind();
+			windo1.open(wind3,links2,links1,links4, id4)
+
+		 }, 1);
+	}else {
+
+		
+		id5 = setInterval(function(){ 
+
+			windo1 = new wind();
+			windo1.close(wind3,links2,links1,links4, id5)
 
 		}, 1);
 	}
@@ -199,7 +249,7 @@ link2.addEventListener("click", function(){
 		id9 = setInterval(function(){ 
 
 			windo1 = new wind();
-			windo1.open(wind2,links1, links3, id9)
+			windo1.open(wind2,links1, links3,links4, id9)
 
 		 }, 1);
 	}else {
@@ -208,7 +258,7 @@ link2.addEventListener("click", function(){
 		idA = setInterval(function(){ 
 
 			windo1 = new wind();
-			windo1.close(wind2,links1, links3, idA)
+			windo1.close(wind2,links1, links3,links4, idA)
 
 		}, 1);
 	}
@@ -229,7 +279,7 @@ link1.addEventListener("click", function(){
 		idE = setInterval(function(){ 
 
 			windo1 = new wind();
-			windo1.open(wind1,links2, links3, idE)
+			windo1.open(wind1,links2, links3,links4, idE)
 
 		 }, 1);
 	}else {
@@ -238,7 +288,7 @@ link1.addEventListener("click", function(){
 		idF = setInterval(function(){ 
 
 			windo1 = new wind();
-			windo1.close(wind1,links2, links3, idF)
+			windo1.close(wind1,links2, links3,links4, idF)
 
 		}, 1);
 	}
