@@ -268,13 +268,60 @@
 	background: #624446;
 }
 
+.skills {
+
+	position: absolute;
+	left:10%;
+	top:140px;
+	width:80%;
+	color: white;
+	height:400px;
+}
+
+.p {
+
+	margin-bottom: 0px;
+}
+
+.cents {
+
+	position: absolute;
+	left:0%;
+	width:100%;
+	height:10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background: white;
+}
 
 
+.study {
+
+	position: absolute;
+	left:10%;
+	top:140px;
+	width:70%;
+	color: white;
+	padding-left: 10%;
+	padding-bottom: 10%;
+	background: #976059;
+}
+
+.home {
+
+	position: absolute;
+	left:10%;
+	top:140px;
+	width:70%;
+	color: black;
+	padding-bottom: 10%;
+}
 
 
+.par {
 
-
-
+	font-size: .8em;
+}
 
 
 
