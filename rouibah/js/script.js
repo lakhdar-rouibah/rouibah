@@ -20,13 +20,14 @@ photo.style.left = (larg/2)-50+"px";
  function loading( ){
     
     mode.style.display = "block";
-    mode.style.backgroundColor = "rgba(23, 172, 178, 1)";
+    mode.style.backgroundColor = "rgba(0, 0, 0, 1)";
     loader.style.display = "flex";
     loader.style.top = ((haut/2)-100)-50+"px";
     loader.style.left = (larg/2)-116+"px";
 
 }
 loading();
+
 
 
 window.onload = function (){
@@ -42,7 +43,7 @@ window.onload = function (){
 function loading_data( data_value){
     
     mode.style.display = "block";
-    mode.style.backgroundColor = "rgba(23, 172, 178, 1)";
+    mode.style.backgroundColor = "rgba(0, 0, 0, 1)";
     loader.style.display = "flex";
     loader.style.top = ((haut/2)-100)+40+"px";
     loader.style.left = (larg/2)-116+"px";

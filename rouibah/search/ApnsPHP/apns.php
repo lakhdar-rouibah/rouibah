@@ -3,8 +3,6 @@
 // class main pour gere las apns =====> Apple Push Notification Service =====================================
 class Main {
 
-	private $_pdo;
-
 	//========================================== le constructeur pour la connexion a la bdd
 	public function __construct($server, $bdd, $user, $password) {
 
@@ -115,8 +113,10 @@ class Main {
 		} else {//si non
 
 			$badge = 1;// le badge = 1
-			$this->send_ios_notification($deviceToken, $message, $badge, $jour, $title);// on envoie vers function send_ios_notification
+
 			$req = $this->pdo->exec("INSERT INTO number_badge (id, token, badge) VALUES ('','".$deviceToken."', '".$badge."')") or die('impossible de saisir la table');// et on insert la valeur badge suite au deviceToken
+			// on envoie vers function send_ios_notification
+			$this->send_ios_notification($deviceToken, $message, $badge, $jour, $title);
 		}
 
 	}

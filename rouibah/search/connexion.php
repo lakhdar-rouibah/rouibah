@@ -1,9 +1,9 @@
 <?php
 
-$server   = " ";
-$user     = " ";
-$password = " ";
-$bdd      = " ";
+$server   = "";
+$user     = "";
+$password = "";
+$bdd      = "";
 
 $ip    = $_SERVER["REMOTE_ADDR"];
 $jour  = date("d/m/y");

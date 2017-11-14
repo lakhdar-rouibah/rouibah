@@ -13,6 +13,13 @@ class Main {
 
 	public function contact($ip, $jour, $heure, $nom, $email, $tel, $message) {
 
+		$subject = "Confirmation de rouibah.fr";
+		$msg     = "Bonjour ".$nom."\nJe vous confirme que j'ai bien reçus votre message et je vous reponds dans les plus brefs délais";
+
+		$headers = 'From: lakhdar@rouibah.fr' ."\r\n".
+     'Reply-To: lakhdar@rouibah.fr' . "\r\n" .
+     'X-Mailer: PHP/' . phpversion();
+
 		if ($nom != null and $email != null and $tel != null and $message != null) {
 
 			$req_contact = $this->pdo->exec("INSERT INTO contact (id, ip, jour, heure, nom, email, tel, message) VALUES ('','".$ip."','".$jour."', '".$heure."', '".$nom."', '".$email."', '".$tel."', '".$message."')") or die('impossible de saisir la table');
@@ -21,6 +28,8 @@ class Main {
 
 				echo ("ok");
 				$this->pdo = null;
+
+				mail($email, $subject, $msg, $headers);
 
 			} else {
 
@@ -34,7 +43,11 @@ class Main {
 
 	//======================================================================================================================================
 
-	public function shared($ip, $jour, $heure, $nom_shared, $email_shared) {
+	public function shared($ip, $jour, $heure, $nom_shared, $from, $email_shared) {
+
+		$subject = "je vous invite a regarder ce profil";
+		$message = "bonjour \nC'est moi ".$nom_shared." je vous invite à regarder ce profil de http://www.rouibah.fr";
+		$headers = 'From: '.$from.''."\r\n".'Reply-To: '.$from.''."\r\n".'X-Mailer: PHP/'.phpversion();
 
 		if ($nom_shared != null and $email_shared != null) {
 
@@ -44,6 +57,8 @@ class Main {
 
 				echo ("ok");
 				$this->pdo = null;
+
+				mail($email_shared, $subject, $message, $headers);
 
 			} else {
 

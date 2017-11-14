@@ -3,8 +3,6 @@
 // ==================== class Main qui gère
 class Main {
 
-	private $_pdo;
-
 	//========================================== le constructeur pour la connexion a la bdd ===================
 	public function __construct($server, $bdd, $user, $password) {
 
@@ -180,6 +178,11 @@ class Main {
 		}
 
 		$this->pdo = null;
+
+		$subject = "Confirmation de rouibah.fr";
+		$msg     = "bonjour ".$nom."\nMerci pour votre message, je vous reponds dans les plus brefs delais.";
+
+		mail($email, $subject, $msg);
 
 	}
 

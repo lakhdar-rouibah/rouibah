@@ -19,9 +19,10 @@ if (isset ($_GET['nom']) and isset ($_GET['email']) and isset ($_GET['tel']) and
 
 }
 
-if (isset ($_GET['nom_shared']) and isset ($_GET['email_shared'])){
+if (isset ($_GET['nom_shared']) and isset ($_GET['from'])and isset ($_GET['email_shared'])){
 	
 	$nom_shared   = $_GET['nom_shared'];
+	$from   = $_GET['from'];
 	$email_shared = $_GET['email_shared'];
 
 }
@@ -56,7 +57,7 @@ switch ($demande) {
 
 		// "shared"
 	case "shared";
-		$objet->shared($ip, $jour, $heure, $nom_shared, $email_shared);
+		$objet->shared($ip, $jour, $heure, $nom_shared, $from,  $email_shared);
 		break;
 		// "code"
 	case "code";

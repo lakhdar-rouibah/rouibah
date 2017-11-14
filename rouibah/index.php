@@ -5,6 +5,7 @@
 
 	<meta charset="UTF-8">
 	<title>Rouibah.fr</title>
+	<link rel="icon" type="image/png" href="img/logo.png" />
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" media="screen and (max-width: 1080px)" href="css/resp.css" />
@@ -19,7 +20,7 @@
 			<div class="header-link"  >
 				<a class="link" href="#" > Accueil </a>
 				<a id="cv_pdf" class="link" href="#" onclick="loading_data('img/CV.pdf');"> CV PDF </a>
-				<a id="cer_pdf" class="link" href="#"> Certificats </a>
+				<!--<a id="cer_pdf" class="link" href="#"> Certificats </a>-->
 				<a id="contact" class="link" href="#" > Contact </a>
 			</div>
 			<div class="header-photo">
@@ -67,16 +68,122 @@
 
 							<div class="about">
 								<span class="black-bold" >Présentation </span></p>
-								Passionné d'internet et de graphisme, je souhaite orienté mes études pour l'obtention des diplômes, qui me permettent de comprendre les langages informatiques, que ce soit html, JavaScript, PHP et autres. Conscient de l'évolution rapide des technologies dans ce domaine.</p>
-
-								Le développeur web est un informaticien qui réalise l’ensemble des fonctionnalités d’un site internet. Le profil du développeur web est celui d'un technicien ou d'un ingénieur capable d’analyser les besoins des clients consignés au préalable dans un cahier des charges par le chef de projet. Il préconise et met en oeuvre une solution technique pour concevoir des sites sur mesure ou adapter des solutions techniques existantes.</p>
-
-
+								Passionné d'internet et de graphisme, j'ai orienté mes études pour l'obtention des diplômes, qui me permettent de comprendre les langages informatiques, que ce soit html, JavaScript, PHP et autres. Conscient de l'évolution rapide des technologies dans ce domaine, j'effectue régulièrement des formations afin de me tenir informé des dernières évolutions.</p>
 							</div>
 						</div>
 
 					<hr></hr>
-					<h1 class="h1-left" >FORMATION</h1>
+					<h1 class="h1-left" >Conpétences</h1>
+						<div class="div-formation">
+							<div class="formation" style="padding-top: 15px;">
+								<ul>
+									<li class="li" > Expertise en matériel informatique et logiciels actuels</li>
+									<li class="li" > Capacité à utiliser un ou plusieurs langages de développement (PHP, HTML, etc.)</li>
+									<li class="li" > Fortes compétences en communication.</li>
+									<li class="li" > Capacité à travailler en équipe.</li>
+									<li class="li" > Œil pour le détail et l'identification des problèmes.</li>
+									<li class="li" > Une compréhension des affaires.</li>
+									<li class="li" > Expérience analytique et commerciale.</li>
+								</ul>
+
+							</div>
+						</div>
+
+
+					<hr></hr>
+
+					<h1 class="h1-left" >Langages informatique</h1>
+						<div class="div-formation">
+							<div class="formation" style="padding-top: 15px;">
+
+								<div>
+								<p class="p-orange">HTML CSS</p>
+								</div>
+								<div class="div-langues">
+									<div class="div-white">
+										<div style="width:90%; height: 100%; background-color: red;">
+											<p class="p-pos-orange ">90%</p>
+										</div>
+									</div>
+								</div>
+								<div>
+									<p class="p-green">JAVASCRIPT</p>
+								</div>
+								<div class="div-langues">
+									<div class="div-white">
+										<div style="width:80%; height: 100%; background-color: red;">
+											<p class="p-pos-green ">80%</p>
+										</div>
+									</div>
+								</div>
+								<div>
+									<p class="p-green">JQUERY</p>
+								</div>
+								<div class="div-langues">
+									<div class="div-white">
+										<div style="width:70%; height: 100%; background-color: red;">
+											<p class="p-pos-green ">70%</p>
+										</div>
+									</div>
+								</div>
+								<div>
+									<p class="p-orange">PHP</p>
+								</div>
+								<div class="div-langues">
+									<div class="div-white">
+										<div style="width:80%; height: 100%; background-color: red;">
+											<p class="p-pos-orange ">80%</p>
+										</div>
+									</div>
+								</div>
+								<div>
+									<p class="p-green">MySQL</p>
+								</div>
+								<div class="div-langues">
+									<div class="div-white">
+										<div style="width:70%; height: 100%; background-color: red;">
+											<p class="p-pos-green ">70%</p>
+										</div>
+									</div>
+								</div>
+								<div>
+									<p class="p-orange">SHELL</p>
+								</div>
+								<div class="div-langues">
+									<div class="div-white">
+										<div style="width:60%; height: 100%; background-color: red;">
+											<p class="p-pos-orange ">60%</p>
+										</div>
+									</div>
+								</div>
+								<div>
+									<p class="p-green">SWIFT</p>
+								</div>
+								<div class="div-langues">
+									<div class="div-white">
+										<div style="width:20%; height: 100%; background-color: red;">
+											<p class="p-pos-green ">20%</p>
+										</div>
+									</div>
+								</div>
+								<div>
+									<p class="p-green">AS3</p>
+								</div>
+								<div class="div-langues">
+									<div class="div-white">
+										<div style="width:50%; height: 100%; background-color: red;">
+											<p class="p-pos-green ">50%</p>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+
+					<hr></hr>
+
+					<h1 class="h1-left" >Formation</h1>
 						<div class="div-formation">
 							<div class="div-year">
 								2016
@@ -84,37 +191,68 @@
 							<div class="div-sepa">
 								<i class="fa fa-play" aria-hidden="true"></i>
 							</div>
-							<div class="formation">
-								<span class="black-bold" >OPENCLASSROOMS : </span><span class="sous-titre"> Développeur Web </span></br>
-								Développement web, intégrateur web Html CSS, CMS, jQuery, Git et GitHub, Création des pages web interactives avec JavaScript, Découper et intégrer une maquette, Programmation en orienté objet en PHP, framework PHP Symfony 2, Linux Shell.
+							<div class="formation" style="padding-top: 0px;">
+								<h2 style="line-height: 10px;">OPENCLASSROOMS</h2>
+								Développeur web.
 							</div>
 						</div>
+
 						<div class="div-formation">
 							<div class="div-year">
-								En cours
+								EN COURS
 							</div>
 							<div class="div-sepa">
 								<i class="fa fa-play" aria-hidden="true"></i>
 							</div>
-							<div class="formation">
-								<span class="black-bold" >OPENCLASSROOMS : </span><span class="sous-titre"> Développeur IOS </span></br>
-								Développement avec modèle MVC, Utilisation des API dans projet Web, Concevoir la solution technique d'un système de gestion.
+							<div class="formation" style="padding-top: 0px;">
+								<h2 style="line-height: 10px;" >NEXTFORMATION</h2>
+								Développeur logiciel
 							</div>
 						</div>
+
+
 					<hr></hr>
-					<h1 class="h1-left" >EXPERIENCE</h1>
+
+					<h1 class="h1-left" >Expériences</h1>
 						<div class="div-formation">
 							<div class="div-year">
-								2010 - 2012
+								2014-2017
 							</div>
 							<div class="div-sepa">
 								<i class="fa fa-play" aria-hidden="true"></i>
 							</div>
-							<div class="formation">
-								<span class="black-bold" >DOC2COM : </span><span class="sous-titre"> Développeur Web </span></br>
-								Developpement et maintenance site web, serveur, récupération et savegarde base de données MySQL, PHP5, SHELL, LINUX, dépannage informatique.
+							<div class="formation" style="padding-top: 15px;">
+								Vendeur chez Bricot Dépot, une enseigne de magasins de bricolage.
 							</div>
 						</div>
+
+						<div class="div-formation">
+							<div class="div-year">
+								2010-2014
+							</div>
+							<div class="div-sepa">
+								<i class="fa fa-play" aria-hidden="true"></i>
+							</div>
+							<div class="formation" style="padding-top: 15px;">
+								Technicien service aprés vente chez Doc2com, un sous traitant PHILIPS  réparation de téléviseur
+							</div>
+						</div>
+
+						<div class="div-formation">
+							<div class="div-year">
+								2006-2010
+							</div>
+							<div class="div-sepa">
+								<i class="fa fa-play" aria-hidden="true"></i>
+							</div>
+							<div class="formation" style="padding-top: 15px;">
+								Technicien chez SOSPC réparation et installation PC
+							</div>
+						</div>
+
+
+					<hr></hr>
+
 				</div>
 
 				<div class="div-section-right">
@@ -125,7 +263,7 @@
 						</div>
 						<div class="div-langues">
 							<div class="div-white">
-								<div style="width:80%; height: 100%; background-color: #F79521;">
+								<div style="width:80%; height: 100%; background-color: red;">
 								</div>
 							</div>
 						</div>
@@ -134,81 +272,81 @@
 						</div>
 						<div class="div-langues">
 							<div class="div-white">
-								<div style="width:50%; height: 100%; background-color: #0B7679;">
+								<div style="width:50%; height: 100%; background-color: red;">
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<h1  class="h1-right">COMPETENCES</h1>
+					<h1  class="h1-right">Logiciels</h1>
 					<div class="langues">
 						<div>
-							<p class="p-orange">HTML CSS</p>
+							<p class="p-orange">Photoshop</p>
 						</div>
 						<div class="div-langues">
 							<div class="div-white">
-								<div style="width:90%; height: 100%; background-color: #F79521;">
-									<p class="p-pos-orange ">90%</p>
-								</div>
-							</div>
-						</div>
-						<div>
-							<p class="p-green">JAVASCRIPT</p>
-						</div>
-						<div class="div-langues">
-							<div class="div-white">
-								<div style="width:80%; height: 100%; background-color: #0B7679;">
+								<div style="width:80%; height: 100%; background-color: red;">
 									<p class="p-pos-green ">80%</p>
 								</div>
 							</div>
 						</div>
 						<div>
-							<p class="p-green">AJAX</p>
+							<p class="p-green">Flash</p>
 						</div>
 						<div class="div-langues">
 							<div class="div-white">
-								<div style="width:70%; height: 100%; background-color: #0B7679;">
+								<div style="width:80%; height: 100%; background-color: red;">
+									<p class="p-pos-green ">80%</p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<p class="p-green">After effect</p>
+						</div>
+						<div class="div-langues">
+							<div class="div-white">
+								<div style="width:70%; height: 100%; background-color: red;">
 									<p class="p-pos-green ">70%</p>
 								</div>
 							</div>
 						</div>
 						<div>
-							<p class="p-orange">PHP</p>
+							<p class="p-orange">Illustrator</p>
 						</div>
 						<div class="div-langues">
 							<div class="div-white">
-								<div style="width:80%; height: 100%; background-color: #F79521;">
-									<p class="p-pos-orange ">80%</p>
+								<div style="width:60%; height: 100%; background-color: red;">
+									<p class="p-pos-green ">60%</p>
 								</div>
 							</div>
 						</div>
 						<div>
-							<p class="p-green">MySQL</p>
+							<p class="p-green">Cinema 4D</p>
 						</div>
 						<div class="div-langues">
 							<div class="div-white">
-								<div style="width:70%; height: 100%; background-color: #0B7679;">
-									<p class="p-pos-green ">70%</p>
+								<div style="width:40%; height: 100%; background-color: red;">
+									<p class="p-pos-green ">40%</p>
 								</div>
 							</div>
 						</div>
 						<div>
-							<p class="p-orange">SHELL</p>
+							<p class="p-orange">Premiere pro</p>
 						</div>
 						<div class="div-langues">
 							<div class="div-white">
-								<div style="width:60%; height: 100%; background-color: #F79521;">
-									<p class="p-pos-orange ">60%</p>
+								<div style="width:80%; height: 100%; background-color: red;">
+									<p class="p-pos-green ">80%</p>
 								</div>
 							</div>
 						</div>
 						<div>
-							<p class="p-green">SWIFT</p>
+							<p class="p-green">Word Excel etc...</p>
 						</div>
 						<div class="div-langues">
 							<div class="div-white">
-								<div style="width:20%; height: 100%; background-color: #0B7679;">
-									<p class="p-pos-green ">20%</p>
+								<div style="width:90%; height: 100%; background-color: red;">
+									<p class="p-pos-green ">90%</p>
 								</div>
 							</div>
 						</div>
@@ -254,8 +392,9 @@
 			</div>
 			<div class="shared-bas">
 				<form  method="post" >
-					<input id = "nom_shared" class="input-shared" type="text" name="nom_shared" placeholder="Nom"></br>
-					<input id = "email_shared" class="input-shared" type="text" name="email_shared" placeholder="E-mail"></br>
+					<input id = "nom_shared" class="input-shared" type="text" name="nom_shared" placeholder="Votre nom"></br>
+					<input id = "from_shared" class="input-shared" type="text" name="from" placeholder="Votre E-mail"></br>
+					<input id = "email_shared" class="input-shared" type="text" name="email_shared" placeholder="E-mail partager"></br>
 					<div class="div-button-shared">
 						<a href="#" class="button-shared"   onclick="shared_func();">Envoyer</a>
 					</div>

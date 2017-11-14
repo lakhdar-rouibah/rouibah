@@ -3,30 +3,29 @@
 include ("../connexion.php");
 include ("apns.php");
 
+if (isset($_POST['demande'])) {
 
-if (isset ($_POST['demande'])){
-	
 	$demande = $_POST["demande"];
 }
 
-if (isset ($_POST['badgeValue'])){
-	
+if (isset($_POST['badgeValue'])) {
+
 	$badgeValue = $_POST["badgeValue"];
 }
 
-if (isset ($_POST['token'])){
-	
-	$token      = $_POST["token"];
+if (isset($_POST['token'])) {
+
+	$token = $_POST["token"];
 }
 
-if (isset ($_POST['title'])){
-	
-	$title   = $_POST["title"];
+if (isset($_POST['title'])) {
+
+	$title = $_POST["title"];
 
 }
 
-if (isset ($_POST['message'])){
-	
+if (isset($_POST['message'])) {
+
 	$message = $_POST["message"];
 }
 

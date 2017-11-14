@@ -44,6 +44,7 @@ var fa_right = document.getElementById('fa_right');
 var fa_left = document.getElementById('fa_left');
 
 var nom_shared = document.getElementById('nom_shared');
+var from_shared = document.getElementById('from_shared');
 var email_shared = document.getElementById('email_shared');
 
 
@@ -404,6 +405,8 @@ function shared_func(){ //==================================== fonction shared p
 	visited("shared");
 
 	emailValide = verif_email (email_shared.value);
+	fromValide = verif_email (from_shared.value);
+
 	
 
 	if (nom_shared.value == "" ){
@@ -412,9 +415,10 @@ function shared_func(){ //==================================== fonction shared p
 
   	}
 
-  	if (emailValide == true && nom_shared.value != "" ){
+  	if (emailValide == true && fromValide == true && nom_shared.value != "" ){
 
   				var nom = nom_shared.value;
+				var from_s = from_shared.value;
 				var email = email_shared.value;
 
 				if (window.XMLHttpRequest) {
@@ -440,6 +444,7 @@ function shared_func(){ //==================================== fonction shared p
 
 		                	nom_shared.value = "";
 							email_shared.value = "";
+							from_shared.value = "";
 							closed ();
 
 	                	}else if(response == "non"){
@@ -452,7 +457,7 @@ function shared_func(){ //==================================== fonction shared p
        			 };
        
 
-        xmlhttp.open("GET","ajax/ajax.php?demande=shared&nom_shared="+nom+"&email_shared="+email,true);
+        xmlhttp.open("GET","ajax/ajax.php?demande=shared&nom_shared="+nom+"&email_shared="+email+"&from="+from_s,true);
         xmlhttp.send();
 
   			}
@@ -635,7 +640,7 @@ modal_cv.style.display = "none";
 });
 
 //=================================================== fin listener CV PDF =======================================================
-/*=================================================== modal certificat ==================================*/
+/*=================================================== modal certificat ==================================
 cer_pdf.addEventListener('click', function(e){
 
 	e.preventDefault();
@@ -647,7 +652,7 @@ visited("phone");
 	
 });
 
-
+*/
 close_phone.addEventListener('click', function(e){
 
 	e.preventDefault();
